@@ -5,6 +5,7 @@ from rasa_sdk.executor import CollectingDispatcher
 class ActionRespondToAPI(Action):
     def name(self):
         return "action_respond_to_api"
+    
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         # Extract the message from the tracker
